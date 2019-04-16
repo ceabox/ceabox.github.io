@@ -1,0 +1,619 @@
+@charset "UTF-8";
+
+/*类目属性栏开始*/
+.solr{
+
+}
+
+.crumbs{
+    height: 50px;
+    font: 400 12px/50px "宋体";
+}
+
+.crumbs span{
+    font-weight: 700;
+
+}
+
+.imgbanner{
+    height: 100px;
+    width: 1210px;
+    overflow: hidden;
+}
+
+.sl-main{
+    margin-top: 10px;
+    border: 1px solid #dddddd;
+    border-bottom: none;
+}
+
+.sl-main .imp-sl ,
+.sl-main .noimp-sl{
+    width: 108px;
+    padding: 10px 0 0 8px;
+    float: left;
+
+}
+
+.sl-main .imp-sl{
+
+    font: 700 12px "宋体"  ;
+}
+
+.sl-main .noimp-sl{
+
+    font: 400 12px "宋体"  ;
+}
+
+
+.sl-main .sl-bg{
+    border-bottom: 1px solid #ddd;
+    background-color: #f3f3f3;
+}
+
+
+
+.sl-main .choice,
+.sl-main .choice1{
+    width: 1092px;
+    float: left;
+    background-color: #fff;
+
+}
+
+
+
+.sl-main .sl-l{
+    width: 935px;
+    height: 100px;
+    border:1px solid #ddd;
+    float: left;
+    margin: 8px 0 10px 10px;
+    overflow: hidden;
+
+}
+
+.choice1 ul{
+    width: 936px;
+    float: left;
+    margin: 8px 0 10px 10px;
+
+}
+
+.choice1 li{
+    float: left;
+    padding: 5px;
+    border:1px solid #ddd;
+    margin-left: -1px;
+    margin-top: -1px;
+
+}
+
+
+
+.sl-l li.s-logo{
+    width: 116px;
+    text-align: center;
+    border: 1px solid #ddd;
+    line-height: 50px;
+    float: left;
+    margin-left: -1px;
+    margin-top: -1px;
+
+}
+
+.choice1 li:hover{
+    border: 1px solid #ff1e20;
+    position: relative;
+    z-index: 1;
+
+}
+
+.sl-l a.s-logo{
+    display: block;
+    height: 52px;
+
+}
+
+
+.sl-main .sl-r{
+    float: right;
+    margin: 8px 10px 0 0 ;
+
+}
+
+.sl-r .more,
+.sl-r .multiSelect
+{
+    height: 13px;
+    float: left;
+    margin-right: 5px;
+    font: 400 12px/13px "宋体";
+    border: 1px solid #ddd;
+    padding:5px;
+}
+
+.sl-l2{
+    width: 935px;
+    height: 34px;
+    float: left;
+    margin: 8px 0 10px 10px;
+    overflow: hidden;
+}
+
+.sl-l2 li{
+    width: 137px;
+    line-height: 34px ;
+    float: left;
+}
+
+.sl-l2 li a{
+    color: #025ba1;
+}
+
+.sl-l2 li a:hover{
+    color: #ff1e20;
+}
+
+
+
+/*类目属性栏结束*/
+
+/*产品列表开始*/
+.list-main{
+    margin-top: 10px;
+}
+
+.ad{
+    width: 175px;
+    border: 1px solid #ddd;
+    float: left;
+    padding-left: 5px;
+}
+
+.ad .adtitle{
+     padding-left: 5px;
+     width: 178px;
+ }
+
+.ad h3{
+    font: 700 14px/40px "微软雅黑";
+    float: left;
+}
+
+
+
+.adtitle i{
+    font: 400 6px/40px "微软雅黑";
+    padding-right:21px;
+    float: right;
+    color: #dddddd;
+}
+
+.ad ul{
+    width: 160px;
+    margin: 5px 0 0 5px;
+}
+.ad li{
+
+}
+
+.ad .price{
+     font: 700 14px "微软雅黑";
+     margin-top: 15px;
+     color: #e43a43;
+
+ }
+
+.ad h3
+{
+     font: 400 12px/20px  "微软雅黑";
+     margin: 15px 5px;
+
+ }
+
+.ad .comment{
+    font: 400 12px/20px  "微软雅黑";
+    margin: 15px 5px;
+
+}
+
+
+.list-r{
+    width: 1020px;
+    float: left;
+    margin-left: 95px;
+}
+/*左侧ad结束*/
+
+.list-r .screen{
+      float: left;
+
+}
+
+.screen-top,
+.screen-bottom{
+    width: 1020px;
+    height: 36px;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+
+}
+
+.screen-top{
+    background-color: #f1f1f1;
+}
+.screen-bottom{
+    background-color: #f9f9f9;
+    margin-top: -1px;
+}
+
+.screen-top ul{
+    float: left;
+    margin: 5px 0 0 5px;
+}
+
+.screen-top ul li{
+    float: left;
+    border: 1px solid #ddd;
+    margin-left: -1px;
+
+}
+
+.screen-top ul li:hover{
+    border: 1px solid #e43a3d;
+    position: relative;
+
+
+}
+
+.screen-top a{
+    height: 24px;
+    display: block;
+    text-align: center;
+    font: 400 12px/20px "宋体";
+    padding: 0 9px;
+    background-color: #fff;
+
+}
+
+.screen-top li.current a{
+    background-color: #e0393c;
+    color: #fff;
+}
+
+
+
+
+
+
+.screen-top .flip{
+     float: right;
+     line-height: 26px;
+     margin: 5px 5px 0 0 ;
+    font-family: "verdana";
+
+ }
+
+.screen-top .flip span{
+    margin-right: 10px ;
+
+}
+
+
+
+.flip .box{
+    float: right;
+    width: 47px;
+    text-align: center;
+    font: 400 16px/24px "宋体";
+    border: 1px solid #ddd;
+    margin-left: -1px;
+
+}
+
+.bottom-main{
+    width: 1015px;
+    height: 33px;
+    padding: 5px 0 0 5px;
+
+}
+
+.bottom-l{
+    float: left;
+    line-height: 25px;
+
+
+}
+.bottom-l .delivery-location,
+.bottom-l .address,
+.bottom-l .bottom-l-cks{
+    float: left;
+    margin-right: 7px;
+}
+
+
+
+
+
+
+.bottom-l .address{
+    width: 136px;
+    height: 23px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    padding-left: 5px;
+
+}
+
+.bottom-l .bottom-l-cks{
+    width: 500px;
+
+}
+
+
+
+
+.bottom-r{
+    float: right;
+    margin-right: 10px;
+    background-color: #ff7279;
+}
+
+.bottom-r input{
+    width: 114px;
+    height: 21px;
+    border: 1px solid #ddd;
+    text-align: center;
+    padding-top: 2px;
+    background-color: #fff;
+    color: #9a9a9a;
+    float: left;
+}
+
+
+.bottom-r .bottom-r-search{
+    width: 50px;
+    height: 25px;
+    padding-top: 2px;
+    background-color:#9a9a9a;
+    border: 1px solid #ddd;
+    font: 400 12px/21px "宋体";
+    float: left;
+    margin-left: -1px;
+    margin-top: 0;
+}
+
+/*products-list开始*/
+.products-list{
+    float: left;
+
+}
+
+.products-list ul{
+
+    float: left;
+}
+
+
+
+.products-list ul li{
+    width: 238px;
+    height: 451px;
+    margin-top: 14px;
+    float: left;
+    margin-right: 10px;
+    border: 1px solid #fff;
+
+}
+.products-list ul li:hover{
+    box-shadow: 0 1px 1px #f1f1f1;
+}
+
+
+.products-list li:hover{
+    border: 1px solid #ddd;
+
+}
+
+.pd-main{
+    margin:40px 7px 20px 7px;
+
+}
+
+.pd-main .pic{
+    width: 220px;
+    height: 220px;
+    background-color: #fff;
+    
+}
+
+.pd-main .pic img {
+    width: 220px;
+    height: 220px;
+}
+
+.pd-main .price{
+    font: 700 20px/22px "宋体";
+    margin-top: 4px;
+    color: #e43a3d;
+
+}
+
+.pd-main h3,
+.pd-main .conmment{
+    font: 400 12px/20px "宋体";
+    margin-bottom: 10px;
+
+}
+
+.pd-main h3{
+    margin: 10px 0 7px 0 ;
+
+}
+.conmment span{
+    font-weight: bolder;
+    color: #02589c;
+}
+
+
+.icon i.discount{
+    display: inline-block;
+    height: 16px;
+    background-color: #e4393c;
+    color: #ffffff;
+    line-height: 14px;
+    padding: 0 1px;
+
+}
+
+.icon{
+    margin-bottom:10px;
+}
+
+
+
+.compare,.fav,.addcar{
+    float: left;
+    width: 54px;
+    font: 400 12px/27px "宋体";
+    margin-left: -1px;
+    text-align: center;
+
+}
+
+.addcar{
+    width: 100px;
+
+}
+
+.buy a{
+    display: block;
+    height: 27px;
+    border: 1px solid #ddd;
+}
+
+.buy a:hover{
+    display: block;
+    height: 27px;
+    border: 1px solid #e43a3d;
+    position: relative;
+}
+
+/*翻页按钮开始*/
+
+.pages{
+    float: right;
+    margin: 20px 0 ;
+
+}
+
+.page-l,.page-r{
+    float: left;
+    margin-right: 20px;
+
+}
+
+.page-l ol li{
+    float: left;
+    border: 1px solid #ddd;
+    margin-right: 10px;
+
+}
+
+.page-l ol li a{
+    display: block;
+    width: 36px;
+    background-color: #f5f5f5;
+    text-align: center;
+    font: 400 14px/36px  "宋体";
+
+}
+
+.page-l ol .pre-page a,
+.page-r i a
+{
+    display: inline-block;
+    width: 72px;
+    background-color: #f5f5f5;
+    text-align: center;
+    font: 400 14px/36px  "宋体";
+
+}
+
+.page-r{
+    font: 400 14px/36px  "宋体";
+}
+
+.page-r input{
+    width: 40px;
+    height: 36px;
+    overflow: hidden;
+    border: 1px solid #ddd;
+    padding-left: 3px;
+}
+
+/*产品列表结束*/
+
+/*商家推荐开始*/
+.hotgoods{
+    width: 1208px;
+    height: 339px;
+    margin-top: 50px;
+    border: 1px solid #ddd;
+}
+
+.hotgoods .adtitle{
+    height: 44px;
+    padding-left: 5px;
+
+}
+
+.adtitle h3{
+    font: 400 16px/40px "微软雅黑";
+    float: left;
+    margin-left: 20px;
+}
+
+
+
+.hotgoods i{
+    font: 400 6px/40px "微软雅黑";
+    padding-right:21px;
+    float: right;
+    color: #dddddd;
+}
+
+.hotgoods-plist li{
+    float: left;
+    width: 165px;
+    margin: 0 36px;
+
+}
+
+.hotgoods-plist .price,
+.hotgoods-plist h3,
+.hotgoods-plist .comment{
+    margin-top: 10px;
+
+}
+
+.hotgoods-plist .price{
+    font: 700 16px/16px "宋体";
+    color: red;
+
+}
+
+
+
+
+
+/*商家推荐结束*/
+
+/*重新搜索开始*/
+/*.research{
+
+    height: 200px;
+    background-color: #ff2cff;
+}*/
+/*重新搜索结束*/

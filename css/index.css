@@ -1,0 +1,230 @@
+
+
+
+
+
+
+
+/*banner¿ªÊ¼*/
+
+.banner604{
+    position: relative;
+
+}
+
+.banner604 a{
+    position: absolute;;
+    width: 100%;
+    height: 464px;
+    background: url("../images/index/banner.jpg") no-repeat top center;
+
+}
+
+.main{
+    position: relative;
+
+}
+
+.slider{
+    margin: 11px 0 0 220px;
+    width: 730px;
+    height: 454px;
+    float: left;
+    position: relative;
+}
+
+.circle{
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    margin-left: -74px;
+
+
+}
+
+.circle li{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #000;
+    font: 200 14px/20px "Î¢ÈíÑÅºÚ";
+    text-align: center;
+    float: left;
+    color: #fff;
+    margin-right: 5px;
+}
+
+li.current{
+    background-color: #b61d21;
+    cursor: pointer;
+
+}
+
+/*Á½¸öÐ¡¼ýÍ·*/
+.arrow-l, .arrow-r{
+    width: 44px;
+    height: 73px;
+    position: absolute;
+    top: 50%;
+    margin-top: -46px;
+    background: rgba(0, 0, 0, .3);
+    color: #fff;
+    font: 400 34px/73px "ËÎÌå";
+    text-align: center;
+}
+
+.arrow-l{
+    left: 0;
+}
+
+.arrow-r{
+    right: 0;
+}
+
+/*Éú»î·þÎñÄ£¿é*/
+.news{
+    width: 248px;
+    height: 451px;
+    border: 1px solid #e4e4e4;
+    float: right;
+    margin-top:11px;
+
+}
+
+.jd-news{
+    height: 200px;
+    border-bottom: 1px dashed #e8e8e7;
+
+
+}
+
+.lifestyle{
+    height: 251px;
+    width: 248px;
+    overflow:hidden;
+
+
+
+
+}
+
+.jd-news .dt,.lifestyle .dt{
+    height: 43px;
+    border-bottom: 1px dotted #e8e8e7;
+    color: #000;
+
+}
+
+.jd-news h3,.lifestyle h3{
+    font: 14px/43px "Î¢ÈíÑÅºÚ";
+    float: left;
+    padding-left: 10px;
+
+
+}
+
+.jd-news .dt a{
+    font: 12px/43px "Î¢ÈíÑÅºÚ";
+    float: right;
+    padding-right: 15px;
+}
+
+.jd-news .dd ul{
+    height: 148px;
+    margin: 5px 0 0 15px;
+
+}
+
+.jd-news .dd li{
+    line-height:30px;
+
+}
+
+.jd-news span{
+    font-weight: 700;
+    margin-right: 5px;
+
+}
+
+.lifestyle ul{
+    width: 252px;
+
+
+}
+.lifestyle li{
+     width: 62px;
+     height: 70px;
+     float: left;
+     border: 1px solid #e8e8e7;
+     position: relative;
+     text-align: center;
+     margin: -1px 0 0 -1px;
+
+
+
+ }
+
+.lifestyle a{
+    display: block;
+    height: 68px;
+    padding-top: 46px;
+
+
+
+
+}
+
+.lifestyle i{
+    display: block;
+    width: 25px;
+    height: 25px;
+    background: url("../images/index/icon_lifeserv.png") no-repeat -26px top;
+    margin-top: 50%;
+    margin-left: 50%;
+    left: -13px;
+    top: -16px;
+    position: absolute;
+
+}
+/*
+.lifestyle span{
+    position: absolute;
+    width: 60px;
+    left: -30px;
+    margin-left: 50%;
+    bottom: 10px;
+}*/
+
+/*Ë«Ê®Ò»»î¶¯*/
+.today{
+    margin-top: 10px;
+    margin-bottom: 2px;
+
+}
+.night-l{
+    width: 210px;
+    height: 160px;
+    float: left;
+
+}
+
+.night-r{
+    width: 1000px;
+    height: 160px;
+    float: left;
+    overflow: hidden;
+
+}
+
+.night-r ul{
+    width: 500%;
+
+
+}
+
+.night-r li{
+    float: left;
+    margin-right: 1px;
+}
+
+

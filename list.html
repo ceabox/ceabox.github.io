@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>产品列表页</title>
+    <link rel="stylesheet" href="css/base.css"/>
+    <link rel="stylesheet" href="css/list.css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script src="js/vue.min.js"></script>
+</head>
+<body>
+
+<!--网站次导航-->
+<!--网站次导航结束-->
+
+<!--横屏banner-->
+
+
+<!--搜索框-->
+<!--搜索框部分结束-->
+
+<!--nav开始-->
+
+<!--nav结束-->
+
+<!--类目属性栏开始-->
+<!--类目属性栏结束-->
+
+<!--产品列表开始-->
+<div class="w list-main clearfix" id="app">
+    <div class="list-r clearfix">
+        <!--商品列表开始-->
+        <div class="products-list clearfix">
+            <ul class="clearfix">
+                <li v-for="(item, index) in cartoons" v-key="index">
+                    <div class="pd-main">
+                           <div class="pic">
+                                <a href="detail.html"><img :src="'images/list/' + item.img + '.png'"/> </a>
+                           </div>
+                           <div><label style="color: black; font-weight: bold;">COLOR:</label><span>{{item.color}}</span></div>
+                           <div><label style="color: black; font-weight: bold;">40HQ:</label><span>{{item.hq}}</span></div>
+                           <div><label style="color: black; font-weight: bold;">SIZE:</label><span>{{item.size}}</span></div>
+                           <div><label style="color: black; font-weight: bold;">PAKING:</label><span>{{item.paking}}</span></div>
+                           <div><label style="color: black; font-weight: bold;">G.W/N.W:</label><span>{{item.gwnw}}</span></div>
+                           <div><label style="color: black; font-weight: bold;">MOTOR:</label><span>{{item.motor}}</span></div>
+                           <div><label style="color: black; font-weight: bold;">BATTERY:</label><span>{{item.battery}}</span></div>
+                           <!--<div>Red,White,black,bule,orange</div>-->
+                           <!--<div>230</div>-->
+                           <!--<div>131*72.5*48</div>-->
+                           <!--<div>133*64*35CM</div>-->
+                           <!--<div>27.1/20.9</div>-->
+                           <!--<div>2*45W</div>-->
+                           <!--<div>1*12V7AH</div>-->
+                            <!--<div class="price">￥99.00</div>-->
+                            <!--<h3><a href="detail.html"> 戴尔(DELL)成就Vostro 3800-R6308 台式电脑(i3-4170 4G 500G DVD 三年上门</a> </h3>-->
+                            <!--<div class="conmment">-->
+                                <!--已有<a href="detail.html" ><span>2.1万+</span></a>人评价-->
+                            <!--</div>-->
+                            <!--<div class="icon">-->
+                                <!--<img src="images/list/jd-icon1.png"/>-->
+                                <!--<i class="discount">券999-100</i>-->
+                            <!--</div>-->
+                            <!--<div class="buy">-->
+                                <!--<div class="compare"><a href="#">对比</a></div>-->
+                                <!--<div class="fav"><a href="#"> 关注</a></div>-->
+                                <!--<div class="addcar"><a href="#"> 加入购物车</a></div>-->
+                            <!--</div>-->
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!--产品列表结束-->
+
+<!--商家推荐开始-->
+<!--商家推荐结束-->
+
+<!--重新搜索开始-->
+<!--重新搜索结束-->
+
+
+
+<!--底部开始-->
+<!--底部结束-->
+<script>
+    new Vue({
+        el: '#app',
+        data: {
+            cartoons: [
+                {
+                    img: 'ZS-0913',
+                    type: 'ZS-0913',
+                    color: 'Red,White,black,bule,orange',
+                    hq: '40HQ',
+                    size: '131*72.5*48',
+                    paking: '133*64*35CM',
+                    gwnw: '27.1/20.9',
+                    motor: '2*45W',
+                    battery: '1*12V7AH'
+                },
+                {
+                    img: 'ZS-LX570',
+                    type: 'ZS-LX570',
+                    color: 'White,Black',
+                    hq: '133',
+                    size: '134*85*63',
+                    paking: '138*74*48',
+                    gwnw: '34.3/28.8',
+                    motor: '2x35W',
+                    battery: '1*12V10AH'
+                },
+                {
+                    img: 'ZS-002',
+                    type: 'ZS-002',
+                    color: 'RED/BLUE/BLACK/WHITE',
+                    hq: '310',
+                    size: '105X64X70',
+                    paking: '107X30.5X67',
+                    gwnw: '15.1/12.3',
+                    motor: '',
+                    battery: ''
+                },
+                {
+                    img: 'ZS-9188',
+                    type: 'ZS-9188',
+                    color: 'WHITE/RED',
+                    hq: '127',
+                    size: '141X84.5X79.5',
+                    paking: '145X77X46',
+                    gwnw: '36/32',
+                    motor: '35W*2',
+                    battery: '12V7AH*1'
+                },
+                {
+                    img: 'ZS-5158J',
+                    type: 'ZS-5158J',
+                    color: 'red,white,yellow,blue',
+                    hq: '600',
+                    size: '105*52.3*62.3',
+                    paking: '82*53*28',
+                    gwnw: '11.7/9.85',
+                    motor: '390#*1',
+                    battery: '6V4AH*1'
+                },
+                {
+                    img: 'ZS-1155J',
+                    type: 'ZS-1155J',
+                    color: 'Black ; Red ; White;',
+                    hq: '205',
+                    size: '132*87*55',
+                    paking: '134*69*34',
+                    gwnw: '28/23',
+                    motor: '#550*2',
+                    battery: '6V7AH *2'
+                },
+                {
+                    img: 'ZS-2158J',
+                    type: 'ZS-2158J',
+                    color: 'BLACK; WHITE ;RED',
+                    hq: '170',
+                    size: '125*73*58',
+                    paking: '126*65*46',
+                    gwnw: '28/22.5',
+                    motor: '550#*2',
+                    battery: '6V7AH*2'
+                },
+                {
+                    img: 'ZS-1166J',
+                    type: 'ZS-1166J',
+                    color: 'white,black',
+                    hq: '378',
+                    size: '108*60*43',
+                    paking: '109*57*28',
+                    gwnw: '16.5/14.5',
+                    motor: '390*2',
+                    battery: '6v4ah*2'
+                },
+                {
+                    img: 'ZS-1166Q',
+                    type: 'ZS-1166Q',
+                    color: 'Red,White,Blue',
+                    hq: '405',
+                    size: '103*65*45',
+                    paking: '105*54*30',
+                    gwnw: '14/11.5',
+                    motor: '2*20W',
+                    battery: '1*12V4.5AH'
+                },
+                {
+                    img: 'ZS-168AQ',
+                    type: 'ZS-168AQ',
+                    color: 'White,Red,Blue',
+                    hq: '475',
+                    size: '95*50*70',
+                    paking: '85*33*52',
+                    gwnw: '11/9.5',
+                    motor: '20W*2',
+                    battery: '6V4.5AH*2'
+                },
+                {
+                    img: 'ZS-903',
+                    type: 'ZS-903',
+                    color: 'Red,White,Blue',
+                    hq: '115',
+                    size: '137*90.5*87.5',
+                    paking: '147*78.5*51.5',
+                    gwnw: '35.84/29.2',
+                    motor: '540*4',
+                    battery: '12V10A*1'
+                },
+                {
+                    img: 'ZS-1200',
+                    type: 'ZS-1200',
+                    color: 'Red,White,Blue',
+                    hq: '312',
+                    size: '105*48*76',
+                    paking: '92*42*57',
+                    gwnw: '15.56/12.66',
+                    motor: '390*2',
+                    battery: '6V7A*1'
+                },
+                {
+                    img: 'ZS-603',
+                    type: 'ZS-603',
+                    color: 'Red,White,Blue,yellow',
+                    hq: '304',
+                    size: '115*63*48',
+                    paking: '114*62*31',
+                    gwnw: '18.5/14.8',
+                    motor: '390*2',
+                    battery: '12V4.5A*1'
+                },
+                {
+                    img: 'ZS-3188QLS',
+                    type: 'ZS-3188QLS',
+                    color: 'Red,White,orange',
+                    hq: '345',
+                    size: '72*72*54',
+                    paking: '72*35*72',
+                    gwnw: '10.5/8',
+                    motor: '380*1',
+                    battery: '6V/4.5AH*1'
+                },
+                {
+                    img: 'ZS-5188QLS',
+                    type: 'ZS-5188QLS',
+                    color: 'Red,White',
+                    hq: '280',
+                    size: '118*70*50',
+                    paking: '118*62*33',
+                    gwnw: '19.5/16.5',
+                    motor: '380*1',
+                    battery: '6V/7AH*1'
+                },
+                {
+                    img: 'ZS-8988QLS',
+                    type: 'ZS-8988QLS',
+                    color: 'Red,White',
+                    hq: '312',
+                    size: '115*65*50',
+                    paking: '115*59*32',
+                    gwnw: '17.5/14.5',
+                    motor: '380*1',
+                    battery: '6V/7AH*1'
+                },
+                {
+                    img: 'ZS-1588QY',
+                    type: 'ZS-1588QY',
+                    color: 'Red,White,Blue,black',
+                    hq: '270',
+                    size: '116*67*50',
+                    paking: '117*59*36',
+                    gwnw: '18/15',
+                    motor: '390#*2',
+                    battery: '12V7AH'
+                },
+                {
+                    img: 'ZS-601',
+                    type: 'ZS-601',
+                    color: '',
+                    hq: '',
+                    size: '',
+                    paking: '',
+                    gwnw: '',
+                    motor: '',
+                    battery: ''
+                }
+            ]
+        }
+    })
+</script>
+
+</body>
+<!--<script src="js/jquery.js"></script>-->
+<!--<script src="jsdetail/base.js"></script>-->
+</html>

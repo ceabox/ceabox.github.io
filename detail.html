@@ -1,0 +1,898 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>详情页</title>
+    <link href="css/jquery-ui.css"  rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/base.css"/>
+    <link rel="stylesheet" href="css/detail.css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+
+</head>
+
+<body>
+<body>
+<div id="mask"></div>
+<div id="Bomb_login">
+    <span id="close_loginMask">×</span>
+    <div class="login_wrap">
+        <p class="form_title">请登录</p><span style="color: #c5c5c5">（提示：此处仅为模拟数据admin 12345）</span>
+        <form action="#" method="post">
+            <div><label for="login_name">账户名：</label><input type="text" name="name" id="login_name"/><div class="tips"><i></i><span>5-12个字符；使用数字，字母，下划线</span></div></div>
+            <div><label for="login_pwd">密码：</label><input type="password" name="pwd" id="login_pwd"/><div class="tips"><i></i><span>请输入密码</span></div></div>
+            <button class="btnCustomer" id="btn_login">登录</button>
+            <button class="btnCustomer" id="btn_gotoRegister">立即注册</button>
+        </form>
+    </div>
+</div>
+<div id="Bomb_register">
+    <span id="close_registerMask">×</span>
+    <div class="login_wrap">
+        <p class="form_title">欢迎注册</p><span style="color: #c5c5c5">（提示：此处仅作本地合法性验证）</span>
+        <form action="#" method="post">
+            <div><label for="register_name">账户名：</label><input type="text" name="name" id="register_name"/><div class="tips"><i></i><span>5-12个字符；使用数字，字母，下划线</span></div></div>
+            <div><label for="register_pwd">密码：</label><input type="password" name="pwd" id="register_pwd"/><div class="tips"><i></i><span>请输入密码</span></div></div>
+            <div><label for="register_pwdConfirm">确认密码：</label><input type="password" name="pwd" id="register_pwdConfirm"/><div class="tips"><i></i><span>请输入密码</span></div></div>
+            <button class="btnCustomer" id="btn_register">立即注册</button>
+        </form>
+    </div>
+</div>
+
+<!--网站次导航-->
+<div class="shortcut">
+    <div class="w">
+        <div class="fl">
+            <dt class="loc">送至：北京
+                <i><s>◇</s></i>
+            </dt>
+
+        </div>
+        <div class="fr">
+            <ul>
+                <li>
+                    <a href="javascript:;" id="login">你好，请登录</a>
+                    <a href="#" class="col-red" id="register">免费注册</a>
+                </li>
+                <li class="line"></li>
+                <li>我的订单</li>
+                <li class="line"></li>
+                <li class="fore">我的京东
+                    <i><s>◇</s></i>
+                </li>
+                <li class="line"></li>
+                <li>京东会员</li>
+                <li class="line"></li>
+                <li>企业采购</li>
+                <li class="line"></li>
+                <li class="fore tel-jd">
+                    <i class="tel"></i>
+                    手机京东
+                    <i><s>◇</s></i>
+                </li>
+                <li class="line"></li>
+                <li class="fore">关注京东
+                    <i><s>◇</s></i>
+                </li>
+                <li class="line"></li>
+                <li class="fore">客户服务
+                    <i><s>◇</s></i>
+                </li>
+                <li class="line"></li>
+                <li class="fore">网站导航
+                    <i><s>◇</s></i>
+                </li>
+
+            </ul>
+        </div>
+
+    </div>
+
+</div>
+<!--网站次导航结束-->
+
+<!--横屏banner-->
+<div class="topbanner" id="jd_topBanner">
+    <div class="w tp"><img src="images/index/topbanner.jpg" alt="双十一"/>
+        <a href="javascript:;" class="close-banner" id="jd_closeTopBanner"></a>
+    </div>
+</div>
+
+
+<!--搜索框-->
+<div class="w clearfix">
+    <div class="logo">
+        <a href="index.html" id="logo_banner"></a>
+        <div class="db11">
+            <a href="index.html">
+                <img src="images/index/dong.gif" alt="">
+            </a>
+        </div>
+    </div>
+    <div class="search">
+        <input type="text" value="" placeholder="图书开抢" id="inputTxt"/>
+        <div id="queryKw"></div>
+        <a href="list.html"  id="btn_search"><button>搜索</button></a>
+
+    </div>
+    <div class="car" id="car">我的购物车
+        <span class="icon1"></span>
+        <span class="icon2">&gt;</span>
+        <span class="icon3" id="cart-icon3">0</span>
+        <div class="carDetail" id="carDetail" style="display: none;">
+            <h4 class="car-title">最新加入的商品</h4>
+            <div class="car-products-list" id="car-products-list">
+                <ul></ul>
+
+            </div>
+            <div class="car-sum">
+                共<span class="car-sum-num" id="car-sum-num">0</span>件商品
+                共计￥<span class="car-sum-price" id="car-sum-price">0.00</span>
+                <a href="#" class="gotoCar">去购物车</a>
+            </div>
+        </div>
+    </div>
+    <div class="key-word">
+        <a href="#" class="col-red">11月11天</a>
+        <a href="#" >11.11秒杀 </a>
+        <a href="#" >买2免1</a>
+        <a href="#" >Note5 黑</a>
+        <a href="#" >12期免息</a>
+        <a href="#" >智能科技</a>
+        <a href="#" >清仓</a>
+        <a href="#" >国际服饰</a>
+        <a href="#" >优惠券</a>
+    </div>
+</div>
+<!--搜索框部分结束-->
+
+<!--nav开始-->
+<div class="jd-nav">
+    <div class="w">
+        <div class="dropdown">
+            <dl id="category">
+                <dt>
+                    <a href="#">全部商品分类</a> </dt>
+                <dd>
+                    <div class="items">
+                        <h3>家用电器</h3>
+                        <span>></span>
+                    </div>
+                    <div class="items">
+                        <h3>手机、数码、京东通信</h3>
+                        <span>></span>
+                    </div>
+                    <div class="items">
+                        <h3>家用电器</h3>
+                        <span>></span>
+                    </div>
+                    <div class="items">
+                        <h3>手机、数码、京东通信</h3>
+                        <span>></span>
+                    </div>
+                    <div class="items">
+                        <h3>家用电器</h3>
+                        <span>></span>
+                    </div>
+                    <div class="items">
+                        <h3>手机、数码、京东通信</h3>
+                        <span>></span>
+                    </div>
+                    <div class="items">
+                        <h3>家用电器</h3>
+                        <span>></span>
+                    </div>
+                    <div class="items">
+                        <h3>手机、数码、京东通信</h3>
+                        <span>></span>
+                    </div>
+                    <div class="items">
+                        <h3>家用电器</h3>
+                        <span>></span>
+                    </div>
+                    <div class="items">
+                        <h3>手机、数码、京东通信</h3>
+                        <span>></span>
+                    </div>
+                    <div class="items">
+                        <h3>家用电器</h3>
+                        <span>></span>
+                    </div>
+                    <div class="items">
+                        <h3>手机、数码、京东通信</h3>
+                        <span>></span>
+                    </div>
+                    <div class="items">
+                        <h3>家用电器</h3>
+                        <span>></span>
+                    </div>
+                    <div class="items">
+                        <h3>手机、数码、京东通信</h3>
+                        <span>></span>
+                    </div>
+                    <div class="items">
+                        <h3>手机、数码、京东通信</h3>
+                        <span>></span>
+                    </div>
+                </dd>
+
+            </dl>
+
+        </div>
+        <div class="navitem">
+            <ul>
+                <li><a href="#">服装城</a></li>
+                <li><a href="#">美妆馆</a> </li>
+                <li><a href="#">超市</a> </li>
+                <li><a href="#">全球购</a> </li>
+                <li><a href="#">闪购</a> </li>
+                <li><a href="#" class="new">团购</a>
+                </li>
+                <li><a href="#">拍卖</a> </li>
+                <li><a href="#">金融</a> </li>
+                <li><a href="#">智能</a> </li>
+            </ul>
+
+
+
+        </div>
+        <div class="bike">
+            <a href="#"></a>
+        </div>
+
+    </div>
+
+</div>
+
+<!--nav结束-->
+
+<!--产品detail-->
+<div class="bg-gray">
+    <!--面包屑-->
+    <div class="w crumb">
+        <a href="#" class="category">电脑、办公</a>
+        <i>></i>
+        <a href="#">电脑整机</a>
+        <i>></i>
+        <a href="#">台式机</a>
+        <i>></i>
+        <a href="#"> 戴尔（DELL）</a>
+        <i>></i>
+        <a href="#">戴尔Vostro 3800-R6308</a>
+
+    </div>
+    <!--/面包屑-->
+
+    <!--产品detai核心-->
+    <div class="w product-main clearfix">
+        <!--产品主图-->
+        <div class="product-pic">
+            <div class="pic-big pic-w">
+                <a href="#">
+                    <img src="images/detail/pic-big.jpg">
+                </a>
+            </div>
+            <!--产品缩略图-->
+            <div class="preview pic-w">
+                <i><img src="images/detail/pic-list-l.png"></i>
+
+                <div class="pic-list">
+                    <ul>
+                        <li>
+                            <a href="#"><img src="images/detail/previewPic.jpg"></a>
+
+                        </li>
+                        <li class="current">
+                            <a href="#"><img src="images/detail/previewPic.jpg"></a>
+
+                        </li>
+                        <li>
+                            <a href="#"><img src="images/detail/previewPic.jpg"></a>
+
+                        </li>
+                        <li>
+                            <a href="#"><img src="images/detail/previewPic.jpg"></a>
+
+                        </li>
+                        <li>
+                            <a href="#"><img src="images/detail/previewPic.jpg"></a>
+
+                        </li>
+                    </ul>
+                </div>
+                <i><img src="images/detail/pic-list-r.png"></i>
+            </div>
+            <!--/产品缩略图-->
+            <div class="short-share clearfix">
+                <a href="#"><i></i>分享</a>
+                <a href="#"><i></i>关注商品</a>
+                <a href="#"><i></i>举报</a>
+            </div>
+        </div>
+        <!--/产品主图-->
+        <!--产品信息-->
+        <div class="product-info">
+            <!--产品标题-->
+            <div class="title">
+                <h1 id="p-name"></h1>
+                <span class="ad-text" id="description"></span>
+                <span><a class="ad-text-p" id="salesInfo"></a>
+            </span>
+            </div>
+            <!--/产品标题-->
+            <!--活动-->
+            <div class="happy-year">
+                <img src="images/detail/happy-year.png" alt=""/>
+            </div>
+            <!--/活动-->
+            <!--产品价格-->
+            <div class="summary">
+                <dt>京&nbsp东&nbsp价</dt>
+                <dd>
+                    <span class="price" id="price"></span>
+                    <a href="#">降价通知</a>
+                </dd>
+                <dt id="discount">促&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp销</dt>
+                <dd id="discount_limitBuy">
+                    <em class="red_bg">限购</em>
+                    <em>此价格不与套装优惠同时享受</em>
+                </dd>
+                <dd id="discount_addBuy">
+                    <em class="red_bg">加价购</em>
+                    <em> 满2999.00另加169.00元，或满999.00另加69.00元，即可在购物车换购热销商品   详情 >></em>
+                </dd>
+            </div>
+            <!--/产品价格-->
+            <!--产品sku信息-->
+            <div class="summary p-choose">
+                <dt id="changOther">支&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp持</dt>
+                <dd id="changOther_old">
+                    <em class="huan"></em>
+                    <em>以旧换新，闲置台式机回收</em>
+                </dd>
+                <dt>配&nbsp送&nbsp至</dt>
+                <dd>
+                    <div class="address" id="saleArea">
+                        <span>北京朝阳区三环以内</span>
+                          <i>
+                          <span class="arrow">◇</span>
+                          </i>
+                        <div class="box box1"></div>
+                        <div class="box box2">
+                            <div class="address-wrap">
+                                <h4>请选择地址</h4>
+                                <ul class="choose-provice">
+                                    <li><a href="#" class="province">北京</a></li>
+                                    <li><a href="#" class="province">朝阳区</a></li>
+                                    <li><a href="#" class="province">三环以内</a></li>
+                                </ul>
+                                <div class="address-pannel">
+                                    <ul class="choose-city">
+                                        <li><a href="">北京</a></li>
+                                        <li><a href="">上海</a></li>
+                                        <li><a href="">天津</a></li>
+                                        <li><a href="">重庆</a></li>
+                                        <li><a href="">北京</a></li>
+                                        <li><a href="">上海</a></li>
+                                        <li><a href="">天津</a></li>
+                                        <li><a href="">重庆</a></li>
+                                        <li><a href="">北京</a></li>
+                                        <li><a href="">上海</a></li>
+                                        <li><a href="">天津</a></li>
+                                        <li><a href="">重庆</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </dd>
+                <dd>
+                    <em> 由 京东 发货，并提供售后服务。23:00前完成下单,预计明天(01月10日)送达</em>
+                </dd>
+                <dt>重&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp量</dt>
+                <dd>
+                    <em id="p-weight"></em>
+                </dd>
+            </div>
+            <div class="summary p-choose choose-attr">
+                <dt>选择颜色</dt>
+                    <dd>
+                        <ul class="choose-color">
+                            <li><a href="#">
+                                <img src="images/detail/choose-pic.jpg" alt=""/>
+                                <span>I3-4170 4G 500G DVD</span>
+                                </a>
+                            </li>
+                            <li><a href="#">
+                                <img src="images/detail/choose-pic.jpg" alt=""/>
+                                <span>I3-4170 4G 500G DVD</span>
+                            </a>
+                            </li>
+                            <li><a href="#">
+                                <img src="images/detail/choose-pic.jpg" alt=""/>
+                                <span>I3-4170 4G 500G DVD</span>
+                            </a>
+                            </li>
+                            <li><a href="#">
+                                <img src="images/detail/choose-pic.jpg" alt=""/>
+                                <span>I3-4170 4G 500G DVD</span>
+                            </a>
+                            </li>
+                        </ul>
+                    </dd>
+                <dt>选择版本</dt>
+                    <dd>
+                        <ul class="choose-normal">
+                            <li><a href="#">
+                                <span>单主机</span>
+                            </a>
+                            </li>
+                            <li><a href="#">
+                                <span>19.5英寸套机</span>
+                            </a>
+                            </li>
+                            <li><a href="#">
+                                <span>23英寸IPS高清大屏套机</span>
+                            </a>
+                            </li>
+                        </ul>
+                    </dd>
+                <dt>套&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp装</dt>
+                <dd>
+                    <ul class="choose-normal">
+                        <li><a href="#">
+                            <span>优惠套装1</span>
+                        </a>
+                        </li>
+                        <li><a href="#">
+                            <span>优惠套装2</span>
+                        </a>
+                        </li>
+                        <li><a href="#">
+                            <span>优惠套装3</span>
+                        </a>
+                        </li>
+                        <li><a href="#">
+                            <span>优惠套装4</span>
+                        </a>
+                        </li>
+                        <li><a href="#">
+                            <span>优惠套装5</span>
+                        </a>
+                        </li>
+                        <li><a href="#">
+                            <span>优惠套装6</span>
+                        </a>
+                        </li>
+                    </ul>
+                </dd>
+                <dt>增值保障</dt>
+                <dd>
+                    <ul class="choose-normal yb-item-cats">
+                        <li class="yb-item-cat">
+                            <div class="yb-item">
+                                <a href="#">
+                                    <span>服务送鼠标 ￥59</span>
+                                    <i>
+                                        <span class="arrow">◇</span>
+                                    </i>
+                                </a>
+                            </div>
+                            <div class="yb-more-item">
+                                <ul>
+                                    <li>
+                                        <input type="checkbox" id="01"/>
+                                        <label for="01">
+                                            <span>服务送鼠标</span>
+                                            <span>￥ 59</span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="02"/>
+                                        <label for="02">
+                                            <span>数据恢复</span>
+                                            <span>￥ 199</span>
+                                        </label>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="yb-item-cat">
+                            <div class="yb-item">
+                                <a href="#">
+                                    <span>原厂延长保 ￥219</span>
+                                    <i>
+                                        <span class="arrow">◇</span>
+                                    </i>
+                                </a>
+                            </div>
+                            <div class="yb-more-item">
+                                <ul>
+                                    <li>
+                                        <input type="checkbox" id="03"/>
+                                        <label for="03">
+                                            <span>服务送鼠标</span>
+                                            <span>￥ 59</span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="04"/>
+                                        <label for="04">
+                                            <span>数据恢复</span>
+                                            <span>￥ 199</span>
+                                        </label>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="yb-item-cat">
+                            <div class="yb-item">
+                                <a href="#">
+                                    <span>原厂白金保 ￥159</span>
+                                    <i>
+                                        <span class="arrow">◇</span>
+                                    </i>
+                                </a>
+                            </div>
+                            <div class="yb-more-item">
+                                <ul>
+                                    <li>
+                                        <input type="checkbox" id="05"/>
+                                        <label for="05">
+                                            <span>服务送鼠标</span>
+                                            <span>￥ 59</span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="06"/>
+                                        <label for="06">
+                                            <span>数据恢复</span>
+                                            <span>￥ 199</span>
+                                        </label>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </dd>
+                <dt>白条分期</dt>
+                <dd>
+                    <ul class="choose-normal">
+                        <li><a href="#">
+                            <span>30天免息</span>
+                        </a>
+                        </li>
+                        <li><a href="#">
+                            <span>￥999.67×3期</span>
+                        </a>
+                        </li>
+                        <li><a href="#">
+                            <span>￥499.83×6期</span>
+                        </a>
+                        </li>
+                        <li><a href="#">
+                            <span>￥264.91×12期</span>
+                        </a>
+                        </li>
+                        <li><a href="#">
+                            <span>￥139.95×24期</span>
+                        </a>
+                        </li>
+                    </ul>
+                </dd>
+            </div>
+            <div class="p-choose buy">
+                <dt>
+                    <input type="text" class="buy-num"  id='buy_num' value="1"/>
+                    <a href="javascript:;" class="change-num " id="add_num">+</a>
+                    <a href="javascript:;" class="change-num " id="min_num">-</a>
+                </dt>
+                <dd class="addCart">
+                    <a href="#" id="btnaddcart">加入购物车</a>
+                </dd>
+            </div>
+            <!--/产品sku信息-->
+        </div>
+        <!--/产品信息-->
+    </div>
+    <!--/产品detai核心-->
+</div>
+<!--/产品detail-->
+
+
+<!--推荐产品-->
+<div class="w recommend">
+    <div id="tabs">
+        <ul>
+            <li class="tabs-choose ui-tabs-active"><a href="#tabs-1" class="tabs-title">人气配件</a></li>
+            <li class="tabs-choose"><a href="#tabs-2" class="tabs-title">键盘</a></li>
+            <li class="tabs-choose"><a href="#tabs-3" class="tabs-title">鼠标</a></li>
+        </ul>
+        <div class="tabs-w">
+            <div class="master">
+                <img src="images/detail/tabs-pic.jpg" alt=""/>
+                <i></i>
+                <a href="#">戴尔(DELL)成就Vostro 3800-R6308 台式电脑</a>
+            </div>
+            <div class="suit">
+                <div id="tabs-1" class="tabs-pannel">
+                    <ul class="recommend-item">
+                        <li><img src="images/detail/tabs-pic.jpg" alt=""/>
+                            <a href="#">戴尔(DELL)成就Vostro 3800-R6308 台式电脑</a>
+                        <input type="checkbox" id="_self1-price"/><label for="_self1-price"> ￥239.00</label>
+                        </li>
+                        <li><img src="images/detail/tabs-pic.jpg" alt=""/>
+                            <a href="#">戴尔(DELL)成就Vostro 3800-R6308 台式电脑</a>
+                            <input type="checkbox" id="_self2-price"/><label for="_self2-price"> ￥239.00</label>
+                        </li>
+                        <li><img src="images/detail/tabs-pic.jpg" alt=""/>
+                            <a href="#">戴尔(DELL)成就Vostro 3800-R6308 台式电脑</a>
+                            <input type="checkbox" id="_self3-price"/><label for="_self3-price"> ￥239.00</label>
+                        </li>
+
+                    </ul>
+
+                </div>
+                <div id="tabs-2" class="tabs-pannel"></div>
+                <div id="tabs-3" class="tabs-pannel"></div>
+            </div>
+            <div class="info">
+                <i></i>
+                <div class="sum-price-pannel">
+                    <div class="txt">已选择0个配件</div>
+                    <div class="txt"><span>组合价</span><span id="sum-price">￥2799.00</span></div>
+                    <a href="#" class="button">立即购买</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--/推荐产品-->
+
+
+<!--产品详细描述开始-->
+<div class="w product-detail">
+    <!--左侧店铺信息-->
+    <div class="list-shop">
+        <div class="shop-t" id="shop_nav">
+            <h3>戴尔京东旗舰店</h3>
+            <i></i>
+        </div>
+        <div class="shop-b">
+            <div class="shop-index"><a href="#"><s></s>进店逛逛</a></div>
+            <div class="favour"><a href="#"><s></s>关注店铺</a></div>
+        </div>
+        <!--同类产品推荐-->
+        <div class="list-shop">
+            <div class="shop-t">
+                <h3>台式机热销榜</h3>
+            </div>
+            <div class="shop-b shop-other-products">
+                <ul>
+                    <li>
+                        <div class="left">
+                            <s>1</s>
+                            <a href="#"><img src="images/detail/slider-pic.jpg" alt=""/></a>
+                        </div>
+                        <div class="right">
+                            <a href="#" class="p-name">戴尔Vostro 3900-R5938C</a>
+                            <a href="#" class="p-price">￥4599.00</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="left">
+                            <s>2</s>
+                            <a href="#"><img src="images/detail/slider-pic.jpg" alt=""/></a>
+                        </div>
+                        <div class="right">
+                            <a href="#" class="p-name">戴尔Vostro 3900-R5938C</a>
+                            <a href="#" class="p-price">￥4599.00</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="left">
+                            <s>3</s>
+                            <a href="#"><img src="images/detail/slider-pic.jpg" alt=""/></a>
+                        </div>
+                        <div class="right">
+                            <a href="#" class="p-name">戴尔Vostro 3900-R5938C</a>
+                            <a href="#" class="p-price">￥4599.00</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="left">
+                            <s>4</s>
+                            <a href="#"><img src="images/detail/slider-pic.jpg" alt=""/></a>
+                        </div>
+                        <div class="right">
+                            <a href="#" class="p-name">戴尔Vostro 3900-R5938C</a>
+                            <a href="#" class="p-price">￥4599.00</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="left">
+                            <s>5</s>
+                            <a href="#"><img src="images/detail/slider-pic.jpg" alt=""/></a>
+                        </div>
+                        <div class="right">
+                            <a href="#" class="p-name">戴尔Vostro 3900-R5938C</a>
+                            <a href="#" class="p-price">￥4599.00</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!--/同类产品推荐-->
+    </div>
+    <!--/左侧店铺信息-->
+
+
+
+    <!--产品detail详细信息-->
+    <div class="detail-main">
+        <div id="tabs-detail">
+            <ul id="product-nav">
+                <li class="tabs-active"><a href="#tabs-detail-1" class="tabs-title">商品介绍</a></li>
+                <li><a href="#tabs-detail-2" class="tabs-title">规格与包装 </a></li>
+                <li><a href="#tabs-detail-3" class="tabs-title">售后保障 </a></li>
+                <li><a href="#tabs-detail-4" class="tabs-title"> 商品评价(2.4万+)</a></li>
+                <li><a href="#tabs-detail-5" class="tabs-title">社区互动</a></li>
+                <li><a href="#" class="button" id="btnaddcart-2">加入购物车</a></li>
+            </ul>
+            <div class="tabs-detail-w">
+                <div id="tabs-detail-1" class="tabs-pannel">
+                    <div class="detail-pic">
+                        <img src="images/detail/detail-pic-1.jpg" alt=""/>
+                    </div>
+                    <div class="detail-pic">
+                        <img src="images/detail/detail-pic-2.jpg" alt=""/>
+                    </div>
+                    <div class="detail-pic">
+                        <img src="images/detail/detail-pic-3.jpg" alt=""/>
+                    </div>
+                    <div class="detail-pic">
+                        <img src="images/detail/detail-pic-4.jpg" alt=""/>
+                    </div>
+                </div>
+                <div id="tabs-detail-2" class="tabs-pannel"></div>
+                <div id="tabs-detail-3" class="tabs-pannel"></div>
+                <div id="tabs-detail-4" class="tabs-pannel"></div>
+                <div id="tabs-detail-5" class="tabs-pannel"></div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+<!--底部开始-->
+<div class="jd-footer">
+    <div class="server">
+        <div class="slogen">
+                <span class="item slogen1">
+                    <img src="images/index/slogen1.png"/>
+                </span>
+                <span class="item slogen2">
+                    <img src="images/index/slogen2.png"/>
+                </span>
+                <span class="item slogen3">
+                    <img src="images/index/slogen3.png"/>
+                </span>
+                <span class="item slogen4">
+                    <img src="images/index/slogen4.png"/>
+                </span>
+        </div>
+        <div class="w pic clearfix">
+            <dl>
+                <dt><a href="#"> 购物指南</a></dt>
+                <dd><a href="#"> 购物流程</a></dd>
+                <dd><a href="#"> 会员介绍</a></dd>
+                <dd><a href="#"> 生活旅行/团购</a></dd>
+                <dd><a href="#"> 常见问题</a></dd>
+                <dd><a href="#"> 大家电</a></dd>
+                <dd><a href="#"> 联系客服</a></dd>
+
+            </dl>
+            <dl>
+                <dt><a href="#"> 购物指南</a></dt>
+                <dd><a href="#"> 购物流程</a></dd>
+                <dd><a href="#"> 会员介绍</a></dd>
+                <dd><a href="#"> 生活旅行/团购</a></dd>
+                <dd><a href="#"> 常见问题</a></dd>
+                <dd><a href="#"> 大家电</a></dd>
+                <dd><a href="#"> 联系客服</a></dd>
+
+            </dl>
+            <dl>
+                <dt><a href="#"> 购物指南</a></dt>
+                <dd><a href="#"> 购物流程</a></dd>
+                <dd><a href="#"> 会员介绍</a></dd>
+                <dd><a href="#"> 生活旅行/团购</a></dd>
+                <dd><a href="#"> 常见问题</a></dd>
+                <dd><a href="#"> 大家电</a></dd>
+                <dd><a href="#"> 联系客服</a></dd>
+
+            </dl>
+            <dl>
+                <dt><a href="#"> 购物指南</a></dt>
+                <dd><a href="#"> 购物流程</a></dd>
+                <dd><a href="#"> 会员介绍</a></dd>
+                <dd><a href="#"> 生活旅行/团购</a></dd>
+                <dd><a href="#"> 常见问题</a></dd>
+                <dd><a href="#"> 大家电</a></dd>
+                <dd><a href="#"> 联系客服</a></dd>
+
+            </dl>
+            <div class="coverage">
+                <dl>
+                    <dt>京东自营覆盖区县</dt>
+                    <dd>
+                        <p>京东已向全国2357个区县提供自营配送服务，支持货到付款、POS机刷卡和售后上门服务。</p>
+                        <p class="look"><a href="#"> 查看详情 ></a></p>
+                    </dd>
+
+                </dl>
+            </div>
+
+        </div>
+    </div>
+    <div class="w againw">
+        <div class="links">
+            <a href="#"> 关于我们</a>|
+            <a href="#"> 联系我们</a>|
+            <a href="#"> 商家入驻</a>|
+            <a href="#"> 营销中心</a>|
+            <a href="#"> 手机京东</a>|
+            <a href="#"> 友情链接</a>|
+            <a href="#"> 销售联盟</a>|
+            <a href="#"> 京东社区</a>|
+            <a href="#"> 京东公益</a>|
+            <a href="#"> English Site</a>|
+            <a href="#"> Contact Us</a>
+
+        </div>
+        <div class="copyright">
+            北京市公安局朝阳分局备案编号110105014669  |  京ICP证070359号  |  互联网药品信息服务资格证编号(京)-经营性-2014-0008  |  新出发京零 字第大120007号
+            <br/>
+
+            音像制品经营许可证苏宿批005号  |  出版物经营许可证编号新出发(苏)批字第N-012号  |  互联网出版许可证编号新出网证(京)字150号
+            <br/>
+
+            网络文化经营许可证京网文[2014]2148-348号  违法和不良信息举报电话：4006561155  Copyright © 2004-2015  京东JD.com 版权所有
+            <br/>
+            京东旗下网站：360TOP  拍拍网  网银在线
+
+        </div>
+        <div class="message">
+            <img src="images/index/mess.png" alt>
+            <img src="images/index/mess2.png" alt>
+            <img src="images/index/mess3.png" alt>
+            <img src="images/index/mess4.png" alt>
+            <img src="images/index/mess5.png" alt>
+
+        </div>
+
+    </div>
+
+</div>
+<!--底部结束-->
+
+
+</body>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/jquery-ui.js"></script>
+<script type="text/javascript" src="jsdetail/base.js"></script>
+<script type="text/javascript" src="jsdetail/detail.js"></script>
+<script type="text/javascript" src="jsdetail/cart.js"></script>
+<script type="text/javascript" src="jsdetail/product.js"></script>
+
+
+
+</html>
